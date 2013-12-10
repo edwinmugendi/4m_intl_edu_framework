@@ -1,0 +1,18 @@
+<?php
+
+class NotificationconfigsTableSeeder extends Seeder {
+
+	public function run()
+	{
+		// Uncomment the below to wipe the table clean before populating
+		// DB::table('notificationconfigs')->truncate();
+
+		$notificationconfigs = array(
+
+		);
+
+		// Uncomment the below to run the seeder
+		// DB::table('notificationconfigs')->insert($notificationconfigs);
+	}
+
+}

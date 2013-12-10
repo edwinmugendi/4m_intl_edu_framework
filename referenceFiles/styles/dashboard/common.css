@@ -1,0 +1,145 @@
+
+div.status #defaulttext {
+   visibility: visible;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 27px;
+    color: #cccccc;
+	padding: 5px;
+	border: thin solid #ffd100;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+div.status #f1_upload_process {
+   visibility: hidden;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 27px;
+    color: #cccccc;
+	padding: 5px;
+	border: thin solid #ffd100;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+div.status div.success{
+    background: url(/assets/images/icons/check.png);
+    visibility: hidden;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: bold;
+    color: #8A2003;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    background-color: #fff19b;
+    border: thin solid #ffd100;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+	margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;}
+
+div.status div.warning {
+    background: url(/assets/images/icons/warning.png);
+	visibility: hidden;
+	text-align: left;
+	vertical-align: middle;
+	font-size: 14px;
+	font-weight: bold;
+	color: #8A2003;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 40px;
+	background-color: #fff19b;
+	border: thin solid #ffd100;
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+div.stivlo-fileupload-buttonbar {
+    height: 25px;
+	width: 100px;
+    margin: 0px 0px 0px 0px;
+	display: inline;
+}
+
+#general #submit, #general label.stivlo-file-upload {		
+    background-color: #ffb94b;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fddb6f), to(#ffb94b));
+    background-image: -webkit-linear-gradient(top, #fddb6f, #ffb94b);
+    background-image: -moz-linear-gradient(top, #fddb6f, #ffb94b);
+    background-image: -ms-linear-gradient(top, #fddb6f, #ffb94b);
+    background-image: -o-linear-gradient(top, #fddb6f, #ffb94b);
+    background-image: linear-gradient(top, #fddb6f, #ffb94b);
+    
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    
+     -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+     box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;    
+    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d69e31 #e3a037 #d5982d #e3a037;
+
+    height: 25px;
+    width: 100px;
+    margin: 5px 0px 5px 1px;
+    padding: 0;
+    cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+    color: #8f5a0a;
+	display: inline;
+}
+#general label.stivlo-file-upload {		
+    height: 25px;
+    width: 100px;
+    margin: 0px 0px 0px 0px;
+    padding: 4px 8px 4px 8px;
+}
+
+#general #submit:hover, #general #submit:focus, #general label.stivlo-file-upload:hover {		
+    background-color: #fddb6f;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffb94b), to(#fddb6f));
+    background-image: -webkit-linear-gradient(top, #ffb94b, #fddb6f);
+    background-image: -moz-linear-gradient(top, #ffb94b, #fddb6f);
+    background-image: -ms-linear-gradient(top, #ffb94b, #fddb6f);
+    background-image: -o-linear-gradient(top, #ffb94b, #fddb6f);
+    background-image: linear-gradient(top, #ffb94b, #fddb6f);
+}	
+
+#scrollbars             { width: 500px; margin: 5px; }
+#scrollbars .viewport   { width: 475px; height: 250px; overflow: hidden; position: relative; margin: 0 0 10px 0; }
+#scrollbars .overview   { list-style: none; position: absolute; left: 0; top: 0; padding: 0 10px 5px 0; margin: 0; }
+
+#scrollbars .scrollbar  { background-color: #fff; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; position: relative; float: right; width: 15px; padding-bottom: 5px; background-position: 0 0; }
+#scrollbars .thumb      { background: transparent url(/assets/images/scrollbar-thumb-y.png)    no-repeat 50% 100%; position: absolute; height: 20px; width: 25px; margin-top: 3px; top: 0; left: -5px; cursor: pointer; overflow: hidden; }
+#scrollbars .thumb .end { background: transparent url(/assets/images/scrollbar-thumb-y.png)    no-repeat 50% 0;    overflow: hidden;   height:  5px; width: 25px; }
+
+#scrollbars .disable    { display: none; }
+.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
+

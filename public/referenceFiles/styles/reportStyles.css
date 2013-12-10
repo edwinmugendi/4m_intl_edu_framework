@@ -1,0 +1,56 @@
+/*
+* Report style css
+*/
+
+form.reportcsv {
+    float:left;
+
+}
+
+.reportcsv input, .reportpdf input{
+    padding: 6px;
+}
+
+#ActivityReportForm select, #ActivityReportForm input, #CoachingReportForm select, #CoachingReportForm input {
+    margin: 0px 4px 0 4px;
+    padding: 6px;
+}
+
+.activityReportForm{
+    float: left;
+    border: 1px solid #ffffff;
+    margin: 0 10px;
+}
+
+.CoachingReportForm{
+    margin: 0 10px;
+    float: left;
+    border: 1px solid #ffffff;
+
+}
+
+#Reportcontent {
+  margin-top: 20px;
+}
+
+legend {display: inline;}
+
+.reportHeading {
+    margin: 8px 0;
+
+}
+
+.coachingReportDataHeader{
+    text-align: left;
+    
+}
+
+th.reportHeading{
+    height: 30px;
+    font-size: 16px;
+
+}
+.coachingReportData {
+    background-color: #bdbdbd;
+
+}

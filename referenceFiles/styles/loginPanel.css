@@ -1,0 +1,232 @@
+/*
+	see notes in "loginPanel.js" file
+*/
+
+/***** clearfix - explained @ http://themergency.com/css-clearfix-demystified *****/
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    }
+.clearfix {  /* for IE/Mac */
+	display: inline-block;
+}
+[if IE] .clearfix {     /* for IE/Win */
+    zoom: 1; 
+    display: block;     /* resets display for IE/Win */
+}
+/* END clearfix */
+
+
+
+
+/* sliding panel container */
+#panelcontainer {
+	position: fixed;   /*Panel will overlap  content; use position: relative and Panel will "push" the content down */
+    bottom: 0px;
+	width: 1100px;
+	z-index: 10001;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+}
+/* END sliding panel */
+#panelcontainer .footer {
+	background-color: #333333;
+	z-index: 999999999;
+	display: block;
+	position: fixed;
+	bottom: 0px;
+	width: 1100px;
+	height: 50px;
+	border-top-width: 5px;
+	border-top-style: solid;
+	border-top-color: #000;	
+}
+
+
+
+
+/* Panel Tab */
+.tab {
+	background-image: url(../assets/images/loginpanel/tab-borderline.png);
+	background-repeat: repeat-x;
+	background-position: center top;
+	height: 42px;
+	position: relative;
+	top: 0;
+	z-index: 999;
+}
+
+.tab ul.login {
+	display: block;
+	position: relative;
+	float: right;
+	clear: right;
+	height: 42px;
+	font-weight: bold;
+	line-height: 42px;
+    margin: 0;
+    right: 150px;
+	color: #ffffff;
+	font-size: 80%;
+	text-align: center;
+}
+
+.tab ul.login li.left {
+	background: url(../assets/images/loginpanel/tab-left.png) no-repeat left 0;
+	height: 42px;
+	width: 30px;
+	padding: 0;
+	margin: 0;
+	display: block;
+	float: left;
+}
+
+.tab ul.login li.right {
+  	background: url(../assets/images/loginpanel/tab-right.png) no-repeat left 0;
+  	height: 42px;
+	width: 30px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: left;
+}
+
+.tab ul.login li {
+	text-align: center;
+	padding: 0;
+	display: block;
+	float: left;
+	height: 42px;
+	background-image: url(../assets/images/loginpanel/tab-middle.png);
+	background-repeat: repeat-x;
+	background-position: 0 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	font-variant: small-caps;
+	letter-spacing: 2px;
+}
+
+.tab a.open, .tab a.close {
+	height: 20px;
+	line-height: 20px;
+!important; 
+	padding-left: 30px;
+!important; 
+	cursor: pointer;
+	display: block;
+	width: 100px;
+	position: relative;
+	top: 11px;
+	text-decoration: none;
+}
+.tab ul.login li a.open {
+	color: #15ADFF;
+}
+.tab ul.login li a:hover.open {
+	color: #ffffff;
+}
+.tab ul.login li a.close {
+	color: #ff3300;
+}
+.tab ul.login li a:hover.close {
+	color: #ffffff;
+}
+.tab a.open {background: url(../assets/images/loginpanel/button-open.png) no-repeat left 0;}
+.tab a.close {background: url(../assets/images/loginpanel/button-close.png) no-repeat left 0;}
+.tab a:hover.open {background: url(../assets/images/loginpanel/button-open.png) no-repeat left -19px;}
+.tab a:hover.close {background: url(../assets/images/loginpanel/button-close.png) no-repeat left -19px;}
+
+
+
+
+
+/* the panel */
+
+#panel {
+	width: 1100px;
+	height: auto;
+	color: #999999;
+	background-image: url(../assets/images/loginpanel/panel-background.png);
+	background-repeat: repeat;
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+	display: none;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#panel .content {
+	width: 1050px;
+	margin: 0 auto;
+	padding-top: 15px;
+	font-size: 14px;
+	text-align: left;
+}
+
+#panel .left-panel {
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+}
+
+#panel .middle-panel {
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	border-left-width: thin;
+	border-left-style: dashed;
+	border-left-color: #ccc;
+	border-right-width: thin;
+	border-right-style: dashed;
+	border-right-color: #ccc;
+}
+
+#panel .right-panel {
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+
+
+#panel h1 {
+	font-size: 28px;
+	padding: 5px 0 10px;
+	margin: 0;
+	color: #ffffff;
+	font-weight: bold;
+}
+#panel h2 {
+	font-size: 20px;
+	padding: 10px 0 5px;
+	margin: 0;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+#panel p {
+	margin: 5px 0;
+	padding: 0;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#panel a:link, #panel a:visited {
+	color: #cccccc;
+	text-decoration: underline;
+}
+
+#panel a:hover, #panel a:active {
+	color: #cccccc;
+	text-decoration: none;
+}
